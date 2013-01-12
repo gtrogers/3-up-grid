@@ -1,0 +1,43 @@
+.grid {
+  max-width: 960px;
+  margin: 32px 32px 32px 32px;
+  clear: left;
+}
+
+.grid .right {
+  float: right;
+}
+
+.grid .one-up, .grid .two-up, .grid .three-up {
+  float: left;
+  margin: 8px 0 8px 0;
+}  
+
+.grid .two-up, .grid .three-up {
+  margin-left: 3.33%;
+}
+
+.grid .start {
+  clear: left;
+  margin-left: 0;
+}
+
+.grid .one-up {
+  width: 100%;
+}
+
+.grid .two-up {
+  width: 48.33%;
+}
+
+.grid .three-up {
+  width: 31.11%;
+}
+
+/* collapsed view */
+@media (max-width: 960px) {
+  .grid .one-up, .grid .two-up, .grid .three-up {
+    margin-left: 0;
+    width: 100%;
+  }
+}
